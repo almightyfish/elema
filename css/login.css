@@ -1,0 +1,236 @@
+/*!****************** 总容器 ******************!*/
+/*.wrapper{*/
+/*	width: 100%;*/
+/*	height: 100%;*/
+/*}*/
+
+/*!****************** header部分 ******************!*/
+/*.wrapper header{*/
+/*	width: 100%;*/
+/*	height: 12vw;*/
+/*	background-color: #0097FF;*/
+/*	color: #fff;*/
+/*	font-size: 4.8vw;*/
+/*	*/
+/*	position: fixed;*/
+/*	left: 0;*/
+/*	top: 0;*/
+/*	z-index: 1000;*/
+/*	*/
+/*	display: flex;*/
+/*	justify-content: center;*/
+/*	align-items: center;*/
+/*}*/
+
+/*!****************** 表单部分 ******************!*/
+/*.wrapper .form-box{*/
+/*	width: 100%;*/
+/*	margin-top: 12vw;*/
+/*}*/
+/*.wrapper .form-box li{*/
+/*	box-sizing: border-box;*/
+/*	padding: 4vw 3vw 0 3vw;*/
+/*	display: flex;*/
+/*	align-items: center;*/
+/*}*/
+/*.wrapper .form-box li .title{*/
+/*	flex: 0 0 18vw;*/
+/*	font-size: 3vw;*/
+/*	font-weight: 700;*/
+/*	color: #666;*/
+/*}*/
+/*.wrapper .form-box li .content{*/
+/*	flex: 1;*/
+/*}*/
+/*.wrapper .form-box li .content input{*/
+/*	border: none;*/
+/*	outline: none;*/
+/*	width: 100%;*/
+/*	height: 4vw;*/
+/*	font-size: 3vw;*/
+/*}*/
+/*.wrapper .button-login{*/
+/*	width: 100%;*/
+/*	box-sizing: border-box;*/
+/*	padding: 4vw 3vw 0 3vw;*/
+/*}*/
+/*.wrapper .button-login button{*/
+/*	width: 100%;*/
+/*	height: 10vw;*/
+/*	font-size: 3.8vw;*/
+/*	font-weight: 700;*/
+/*	color: #fff;*/
+/*	background-color: #38CA73;*/
+/*	border-radius: 4px;*/
+/*	*/
+/*	border: none;*/
+/*	outline: none;*/
+/*}*/
+/*.wrapper .button-register{*/
+/*	width: 100%;*/
+/*	box-sizing: border-box;*/
+/*	padding: 4vw 3vw 0 3vw;*/
+/*}*/
+/*.wrapper .button-register button{*/
+/*	width: 100%;*/
+/*	height: 10vw;*/
+/*	font-size: 3.8vw;*/
+/*	font-weight: 700;*/
+/*	!*与上面登陆按钮不同的只有颜色、背景色、边框不同*!*/
+/*	color: #666;*/
+/*	background-color: #EEE;*/
+/*	border: solid 1px #DDD;*/
+/*	border-radius: 4px;*/
+/*	*/
+/*	border: none;*/
+/*	outline: none;*/
+/*}*/
+/*!****************** 底部菜单部分 ******************!*/
+/*.wrapper .footer{*/
+/*	width: 100%;*/
+/*	height: 14vw;*/
+/*	border-top: solid 1px #DDD;*/
+/*	background-color: #fff;*/
+/*	*/
+/*	position: fixed;*/
+/*	left: 0;*/
+/*	bottom: 0;*/
+/*	*/
+/*	display: flex;*/
+/*	justify-content: space-around;*/
+/*	align-items: center;*/
+/*}*/
+/*.wrapper .footer li{*/
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*	justify-content: center;*/
+/*	align-items: center;*/
+/*	*/
+/*	color: #999;*/
+/*	user-select: none;*/
+/*	cursor: pointer;*/
+/*}*/
+/*.wrapper .footer li p{*/
+/*	font-size: 2.8vw;*/
+/*}*/
+/*.wrapper .footer li i{*/
+/*	font-size: 5vw;*/
+/*}*/
+
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url(../img/pexels-cats-coming-920220.jpg) no-repeat;
+	background-size: cover;
+}
+
+.box{
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 350px;
+	height: 350px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+	border-right: 1px solid rgba(255,255,255,0.5);
+	backdrop-filter: blur(10px); /*虚化*/
+	background: rgba(50,50,50,0.2);
+}
+
+.box > h2{
+	color: rgba(255,255,255,0.9);
+	margin-bottom: 20px;
+}
+
+.box .input-box{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}
+
+.box .input-box >label{
+	margin-bottom: 5px;
+	color: rgba(255,255,255,0.9);
+	font-size:13px;
+}
+
+.box .input-box >input{
+	box-sizing: border-box;
+	color: rgba(255,255,255,0.9);
+	font-size:14px;
+	width: 250px;
+	height: 35px;
+	background: rgba(255,255,255,0.3);
+	border: 1px solid rgba(255,255,255,0.5);
+	border-radius: 5px;
+	transition:0.2s;
+	outline:none;
+	padding:0 10px;
+	letter-spacing: 1px;
+}
+
+.box .input-box>input:focus{
+	border:1px solid rgba(255,255,255,0.8);
+}
+
+.box .btn-box{
+	width:250px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: start;
+}
+
+.box .btn-box>a{
+	font-size: 13px;
+	text-decoration: none;
+	color: rgba(255,255,255,0.9);
+	transition: 0.2s;
+	width: 250px;
+	text-align: end;
+
+}
+.box .btn-box>a:hover{
+	color: rgba(255,255,255,1);
+}
+
+.box .btn-box>div{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: start;
+	margin-top: 20px;
+}
+
+.box .btn-box >div>button{
+	width: 120px;
+	height: 35px;
+	border:1px solid rgba(128,64,0,0.8);
+	background: rgba(128,64,0,0.5);
+	border-radius: 5px;
+	transition: 0.2s;
+}
+
+.box .btn-box >div>button:nth-of-type(2){
+	margin-left: 10px;
+}
+
+.box .btn-box >div>button:hover{
+	border:1px solid rgba(255,255,255,0.4);
+	background: rgba(255,255,255,0.4);
+	border-radius: 5px;
+}
